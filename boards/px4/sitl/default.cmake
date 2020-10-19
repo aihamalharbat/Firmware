@@ -109,5 +109,5 @@ if(REPLAY_FILE)
 	message(STATUS "Building without lockstep for replay")
 	set(ENABLE_LOCKSTEP_SCHEDULER no)
 else()
-	set(ENABLE_LOCKSTEP_SCHEDULER yes)
+	set(ENABLE_LOCKSTEP_SCHEDULER no)  # Disabled to enable /ActuatorControl use.
 endif()
